@@ -1,0 +1,152 @@
+.form {
+  max-width: 320px;
+}
+
+.form-title {
+  color: #f7f7f7;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 0 30px;
+}
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-left, .form-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  padding: 0 30px;
+}
+
+.form-input {
+  border-radius: 5px;
+  border: 1px solid #54a3da;
+  padding: 5px 10px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.section-contact .form-input {
+  border: 1px solid grey;
+}
+
+.search {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 40px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.flip-icon ~ .form-input {
+  padding-left: 66px;
+}
+
+.icon-size {
+  height: 25px;
+  width: auto;
+}
+
+.section-contact .form-input {
+  padding-left: 45px;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 480px) {
+  .form-title {
+    padding: 0;
+  }
+  
+  .form-left, .form-right {
+    padding: 0;
+  }
+
+  .form-title {
+    font-size: 14px;
+  }
+
+  .section-contact .form-input {
+    font-size: 24px;
+    padding-left: 50px;
+  }
+
+  .section-contact .form-control {
+    margin: 0 -10px;
+  }
+  .section-contact .form-control > * {
+    padding: 0 10px;
+  }
+
+  .search-icon {
+    left: 25px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .form-title {
+    font-size: 18px;
+  }
+
+  .hero .form-control {
+    margin: 0 -5px;
+  }
+  .hero .form-control > * {
+    padding: 0 5px;
+  }
+
+  .hero .form-input {
+    padding: 6px 10px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .form-title {
+    font-size: 18px;
+  }
+
+  .hero .form-control, .section-contact .form-control {
+    margin: 0 -18px;
+  }
+  .hero .form-control > *, .section-contact .form-control > * {
+    padding: 0 18px;
+  }
+
+ .hero .form-input {
+    padding: 13px 10px;
+    font-size: 22px;
+  }
+
+  .section-contact .form-input {
+    padding-top: 13px;;
+    padding-bottom: 13px;
+  }
+
+  .search-icon {
+    left: 35px;
+  }
+}
