@@ -1,0 +1,250 @@
+.hero {
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  background-image: -webkit-gradient(linear,left top, left bottom,from(#54a3da), to(#64a4d7));
+  background-image: -o-linear-gradient(top,#54a3da, #64a4d7);
+  background-image: linear-gradient(to bottom,#54a3da, #64a4d7);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-cloud {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.cloud-1 {
+  width: 50px;
+  top: 7%;
+  left: 10%;
+  opacity: 0.4;
+}
+
+.cloud-2 {
+  width: 65px;
+  top: 10%;
+  left: 53%;
+  opacity: 0.5;
+}
+
+.cloud-3 {
+  width: 60px;
+  top: 5%;
+  left: 90%;
+  opacity: 0.7;
+}
+
+.cloud-4 {
+  width: 35px;
+  top: 35%;
+  left: 92%;
+  opacity: 0.3;
+}
+
+.vert-move-1 {
+  -webkit-animation: mover 1s infinite  alternate;
+          animation: mover 1s infinite  alternate;
+}
+
+.vert-move-2 {
+  -webkit-animation: mover 2s infinite  alternate;
+          animation: mover 2s infinite  alternate;
+}
+
+.vert-move-3 {
+  -webkit-animation: mover 1.5s infinite  alternate;
+          animation: mover 1.5s infinite  alternate;
+}
+
+.vert-move-4 {
+  -webkit-animation: mover 1.2s infinite  alternate;
+          animation: mover 1.2s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+.swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-img {
+  width: 75%;
+  height: auto;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.hero-textarea {
+  color: #eeecec;
+  line-height: 30px;
+  max-width: 320px;
+}
+
+.hero-title {
+  color: #f7f6f2;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero-description {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-layout {
+    margin: 0 -10px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  
+  .hero-layout > * {
+    padding: 0 10px;
+  }
+
+  .hero-right {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .hero-textarea {
+    max-width: 580px;
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .hero-title, .hero-description {
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 16px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+
+  .hero-description {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-cloud {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .hero-left {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  
+  .hero-textarea {
+    padding-left: 30px;
+  }
+
+  .hero-title {
+    font-size: 52px;
+    line-height: 72px;
+    margin-bottom: 25px;
+  }
+
+  .hero-description {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+}
